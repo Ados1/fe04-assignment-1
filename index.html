@@ -1,47 +1,154 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Styling Exercise</title>
     <style>
-        /* Your CSS code goes here */
-    </style>
-</head>
+      .header {
+        background-color: rgb(208, 224, 224);
+        padding: -20px;
+        margin: -2px;
+      }
+      .main {
+        background-color: rgb(224, 224, 204);
+        padding: -1px;
+        margin: -2px;
+      }
+      .footer {
+        background-color: rgb(225, 215, 203);
+        padding: -10px;
+        margin: -2px;
+      }
+      h1 {
+        font-size: 60px;
+        color: blue;
+      }
+      h2 {
+        font-size: 60px;
+        color: blue;
+      }
+      ul {
+        font-size: medium;
+        color: brown;
+      }
+      p {
+        font-size: 20px;
+        color: blueviolet;
+      }
+      a[href="#"] {
+        color: gray;
+      }
+      #First {
+        border: 2px black solid;
+        color: green;
+      }
+      #first-item {
+        border: 2px black dotted;
+        color: black;
+        width: 50px;
+        height: 20px;
+        margin: 5px;
+      }
+      #item {
+        border: 2px black solid;
+        color: red;
+      }
 
-<body>
+      #First:hover {
+        color: black;
+      }
+      #middle:hover {
+        color: brown;
+      }
+      #itemcont:hover {
+        color: blueviolet;
+      }
+      #item:hover {
+        color: black;
+      }
+      #last-item:hover {
+        color: black;
+      }
+      p::first-letter {
+        font-size: 25px;
+        color: red;
+      }
+
+      #links {
+        padding: -60px;
+        margin: -20px;
+      }
+      #list {
+        padding: -90px;
+        margin: -20px;
+      }
+      #footer-link {
+        padding: 10px;
+        margin: 10px;
+      }
+
+      #header-first-link {
+        margin: 5px;
+      }
+      #header-second-link {
+        margin: 5px;
+      }
+      #header-third-link {
+        margin: 5px;
+      }
+      #second-item {
+        margin: 5px;
+      }
+      #third-item {
+        margin: 5px;
+      }
+      #first-link {
+        margin: 5px;
+      }
+      #second-link {
+        margin: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
     <header class="header">
-        <h1>My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+      <h1>My Website</h1>
+      <nav>
+        <ul id="links">
+          <li id="header-first-link"><a href="#" id="First">Home</a></li>
+          <li id="header-second-link"><a href="#" id="middle">About</a></li>
+          <li id="header-third-link"><a href="#" id="itemcont">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="main">
-        <h2>List of Items</h2>
-        <ul>
-            <li id="first-item">Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod tortor ut mauris tincidunt, in
-            ultricies nibh feugiat. Suspendisse potenti. Fusce eleifend felis eget suscipit bibendum. Mauris facilisis
-            tristique dolor ac imperdiet. Duis sit amet lectus mauris.</p>
-        <p>Curabitur congue lacinia nibh, a vehicula urna varius ac. Etiam vitae lectus diam. Ut suscipit elit non elit
-            suscipit sodales. Sed sollicitudin nulla justo, in iaculis odio dapibus vel. Fusce auctor molestie turpis,
-            sit amet venenatis ipsum eleifend et.</p>
+      <h2>List of Items</h2>
+      <ul id="list">
+        <li id="first-item">Item 1</li>
+        <li id="second-item">Item 2</li>
+        <li id="third-item">Item 3</li>
+      </ul>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod
+        tortor ut mauris tincidunt, in ultricies nibh feugiat. Suspendisse
+        potenti. Fusce eleifend felis eget suscipit bibendum. Mauris facilisis
+        tristique dolor ac imperdiet. Duis sit amet lectus mauris.
+      </p>
+      <p>
+        Curabitur congue lacinia nibh, a vehicula urna varius ac. Etiam vitae
+        lectus diam. Ut suscipit elit non elit suscipit sodales. Sed
+        sollicitudin nulla justo, in iaculis odio dapibus vel. Fusce auctor
+        molestie turpis, sit amet venenatis ipsum eleifend et.
+      </p>
     </main>
     <footer class="footer">
-        <p>&copy; 2023 My Website. All rights reserved.</p>
-        <nav>
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Use</a></li>
-            </ul>
-        </nav>
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+      <nav>
+        <ul id="footer-link">
+          <li id="first-link"><a href="#" id="item">Privacy Policy</a></li>
+          <li id="second-link"><a href="#" id="last-item">Terms of Use</a></li>
+        </ul>
+      </nav>
     </footer>
-</body>
-
+  </body>
 </html>
